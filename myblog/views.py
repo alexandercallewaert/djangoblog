@@ -37,6 +37,11 @@ def CategoryView(request, cats):
 	return render(request, 'categories.html', {'cats': cats.title(), 'category_posts': category_posts})
 
 
+#def CategoryView2(request, bloggers):
+	#category2_posts = Post.objects.filter(author = bloggers)
+	#return render(request, 'bloggers.html', {'bloggers': bloggers, 'category2_posts': category2_posts})
+
+
 class ArticleDetailView(DetailView):
 	model = Post
 	template_name = 'article_details.html'
