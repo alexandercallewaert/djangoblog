@@ -6,8 +6,8 @@ categories = [('Hong Kong', 'Hong Kong'), ('Thailand, Phuket', 'Thailand, Phuket
 
 categories_list = []
 
-for item in categories:
-	categories_list.append(item)
+#for item in categories:
+#	categories_list.append(item)
 
 
 class PostForm(forms.ModelForm):
