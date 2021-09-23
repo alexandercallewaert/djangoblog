@@ -30,7 +30,10 @@ SECRET_KEY = 'django-insecure-kfqz(fwrpss6)ta2d@nkr42z5%mf@b7rtkn&xi8h0*vd$!8&oo
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
+<<<<<<< HEAD
 ALLOWED_HOSTS = ['wadupp.herokuapp.com', '127.0.0.1']
+=======
+>>>>>>> main
 
 
 # Application definition
@@ -49,13 +52,19 @@ INSTALLED_APPS = [
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
+<<<<<<< HEAD
     'whitenoise.middleware.WhiteNoiseMiddleware',
+=======
+>>>>>>> main
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
+<<<<<<< HEAD
+=======
+>>>>>>> main
 ]
 
 ROOT_URLCONF = 'blog.urls'
@@ -129,6 +138,7 @@ USE_TZ = True
 STATIC_URL = '/static/'
 MEDIA_URL = '/media/'
 
+<<<<<<< HEAD
 STATICFILES_DIRS = [
     os.path.join(BASE_DIR, "static"),
     #'/var/www/static/',
@@ -137,17 +147,25 @@ STATICFILES_DIRS = [
 STATIC_ROOT = os.path.join(BASE_DIR, "staticfiles")
 
 
+=======
+>>>>>>> main
 STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 #MEDIA_ROOT = Path('media').resolve().BASE_DIR.BASE_DIR
 
+<<<<<<< HEAD
 #Path(__file__).resolve().parent.parent
 
 
+=======
+>>>>>>> main
 
 
 LOGIN_REDIRECT_URL = 'home'
 LOGOUT_REDIRECT_URL = 'home'
 
+<<<<<<< HEAD
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+=======
+>>>>>>> main

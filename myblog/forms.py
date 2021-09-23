@@ -1,13 +1,16 @@
 from django import forms
 from .models import Post, Category, Comment
 
-categories = [('Hong Kong', 'Hong Kong'), ('Thailand, Phuket', 'Thailand, Phuket')]
-#categories = Category.objects.all().values_list('name', 'name')
+<<<<<<< HEAD
+=======
+#categories = [('Hong Kong', 'Hong Kong'), ('Thailand, Phuket', 'Thailand, Phuket')]
+categories = Category.objects.all().values_list('name', 'name')
 
 categories_list = []
 
-#for item in categories:
-#	categories_list.append(item)
+for item in categories:
+	categories_list.append(item)
+>>>>>>> main
 
 
 class PostForm(forms.ModelForm):
