@@ -23,7 +23,7 @@ class PostForm(forms.ModelForm):
 			'title_tag': forms.TextInput(attrs = {'class': 'form-control', 'placeholder': "Tab Name"}),
 			'author': forms.TextInput(attrs = {'class': 'form-control', 'value': "", 'id': 'x', 'type': 'hidden'}),
 			#'author': forms.Select(attrs = {'class': 'form-control'}),
-			'category': forms.CharField(choices = categories_list, attrs = {'class': 'form-control'}),
+			'category': forms.Select(choices = categories_list, attrs = {'class': 'form-control'}),
 			'body': forms.Textarea(attrs = {'class': 'form-control', 'placeholder': "Text"}),
 			'snippet': forms.Textarea(attrs = {'class': 'form-control', 'placeholder': "Here comes the summary of your blog post which will appear on the home page"}),
 
